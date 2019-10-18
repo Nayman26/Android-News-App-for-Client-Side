@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:padding="8dp"
+    tools:context="HaberBoxAdapter">
+    <ImageView
+        android:id="@+id/resim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:contentDescription="haberResmi"
+        android:adjustViewBounds="true" />
+    <TextView
+        android:id="@+id/baslik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:layout_marginBottom="2dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</LinearLayout>

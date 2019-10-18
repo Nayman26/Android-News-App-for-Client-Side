@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IcerikActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/resimIcerik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="haberResmi"
+        android:adjustViewBounds="true"
+        tools:ignore="HardcodedText" />
+    <LinearLayout
+        android:id="@+id/icerikMenu"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/labelMenu"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+        <TextView
+            android:id="@+id/txGoruntulenme"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="2dp"
+            android:paddingBottom="5dp"
+            android:text="Görüntülenme:"/>
+            <TextView
+                android:id="@+id/txBegenme"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="2dp"
+                android:paddingBottom="5dp"
+                android:text="Begenme:"/>
+
+            <TextView
+                android:id="@+id/txBegenmeme"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="2dp"
+                android:text="Begenmeme:" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/DegerMenu"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/txGoruntulenmeSayisi"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="3dp"
+            android:paddingBottom="5dp" />
+            <TextView
+                android:id="@+id/txBegenmeSayisi"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="3dp"
+                android:paddingBottom="5dp" />
+            <TextView
+                android:id="@+id/txBegenmemeSayisi"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="3dp"
+                android:paddingBottom="5dp" />
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/begen"
+            android:backgroundTint="@color/colorPrimary"
+            />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/begenme"
+            android:backgroundTint="@color/colorPrimary"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txIcerik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp" />
+    </ScrollView>
+
+</LinearLayout>
